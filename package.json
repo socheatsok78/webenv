@@ -6,6 +6,14 @@
   "repository": "https://github.com/socheatsok78/webenv",
   "author": "Socheat Sok <socheatsok78@gmail.com>",
   "license": "MIT",
+  "exports": {
+    ".": {
+      "require": "./lib/main.js",
+      "types": "./lib/main.d.ts",
+      "default": "./lib/main.js"
+    },
+    "./package.json": "./package.json"
+  },
   "devDependencies": {
     "dotenv": "^16.0.1",
     "dotenv-expand": "^8.0.3"
