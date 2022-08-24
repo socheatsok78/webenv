@@ -12,7 +12,8 @@ Dotenv is a zero-dependency module that loads environment variables from a `.env
 
 While `dotenv` provide a convenient way of loading environment variables from a `.env` file for Node.js, however managing environment variables for the web platform doesn't seem to be any easier.
 
-This project is aimed to fix the issue on the web platform. It a total ripped off from [`dotenv`](https://github.com/motdotla/dotenv) and [`dotenv-expand`](https://github.com/motdotla/dotenv-expand) functionality.
+This project is aimed to fix the those on the web platform by using `fetch` to request the `.env` file from your publicly accessible path.
+It a highly customized [`dotenv`](https://github.com/motdotla/dotenv) and [`dotenv-expand`](https://github.com/motdotla/dotenv-expand) functionality.
 
 ## Install
 
@@ -38,7 +39,7 @@ As early as possible in your application, import and configure dotenv:
 import * as webenv from '@socheatsok78/webenv'
 
 (async () => {
-    await webenv.config({ path: '/.env' })
+    await webenv.config({ path: '/.env' }) // make a fetch request to '/.env' and parse the string response
     console.log(window.env) // remove this after you've confirmed it working
 })()
 ```
