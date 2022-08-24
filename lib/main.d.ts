@@ -15,7 +15,7 @@ export interface DotenvParseOutput {
  * @returns an object with keys and values based on `src`. example: `{ DB_HOST : 'localhost' }`
  */
 export function parse<T extends DotenvParseOutput = DotenvParseOutput>(
-    src: string | Buffer
+    src: string
 ): T;
 
 export interface DotenvConfigOptions {
