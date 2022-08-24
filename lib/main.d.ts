@@ -70,7 +70,7 @@ export interface DotenvConfigOutput {
  * @returns an object with a `parsed` key if successful or `error` key if an error occurred. example: { parsed: { KEY: 'value' } }
  *
  */
-export async function config(options?: DotenvConfigOptions): DotenvConfigOutput;
+export function config(options?: DotenvConfigOptions): Promise<DotenvConfigOutput>;
 
 // dotenv-expand
 export interface DotenvExpandOptions {
