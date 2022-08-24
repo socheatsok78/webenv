@@ -6,14 +6,24 @@ function _log(message) {
     console.log(`[dotenv][DEBUG] ${message}`)
 }
 
-export async function config(options) {
+function _resolveHome(envPath) {
+    return envPath[0] === '~' ? [location.origin, envPath.slice(1)].join('/') : envPath
+}
+
+async function config(options) {
     let dotenvPath = '.env'
     const debug = Boolean(options && options.debug)
     const override = Boolean(options && options.override)
 
+    if (options) {
+        if (options.path != null) {
+            dotenvPath = _resolveHome(options.path)
+        }
+    }
+
     try {
         // Specifying an encoding returns a string instead of a buffer
-        const dotenvRes = await fetch('/' + dotenvPath)
+        const dotenvRes = await fetch(dotenvPath)
         const dotenvBuffer = await dotenvRes.text()
         const parsed = parse(dotenvBuffer)
 
@@ -43,4 +53,16 @@ export async function config(options) {
 
         return { error: e }
     }
+}
+
+
+const WebenvModule = {
+    parse,
+    config
+}
+
+export  {
+    WebenvModule,
+    parse,
+    config
 }
