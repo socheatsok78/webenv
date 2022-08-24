@@ -10,9 +10,9 @@ Loads variables from `.env` for web projects.
 
 Dotenv is a zero-dependency module that loads environment variables from a `.env` file into `process.env`. Storing configuration in the environment separate from code is based on [The Twelve-Factor App](http://12factor.net/config) methodology.
 
-While `dotenv` provide a convenient way of loading environment variables from a `.env` file for Node.js, however managing environment variables for the web doesn't seem to be any easier. 
+While `dotenv` provide a convenient way of loading environment variables from a `.env` file for Node.js, however managing environment variables for the web platform doesn't seem to be any easier.
 
-So this is a totally ripped off from [`dotenv`](https://github.com/motdotla/dotenv) and [`dotenv-expand`](https://github.com/motdotla/dotenv-expand) functionality build for the web.
+This project is aimed to fix the issue on the web platform. It a total ripped off from [`dotenv`](https://github.com/motdotla/dotenv) and [`dotenv-expand`](https://github.com/motdotla/dotenv-expand) functionality.
 
 ## Install
 
@@ -30,8 +30,7 @@ yarn add @socheatsok78/webenv
 
 Create a `.env` file in the public folder of your project:
 ```env
-S3_BUCKET="YOURS3BUCKET"
-SECRET_KEY="YOURSECRETKEYGOESHERE"
+API_BACKEND_ENDPOINT="https://api.example.com"
 ```
 
 As early as possible in your application, import and configure dotenv:
