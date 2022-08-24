@@ -8,7 +8,11 @@ Loads variables from `.env` for web projects.
 
 <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
 
+**What is Dotenv?**
+
 Dotenv is a zero-dependency module that loads environment variables from a `.env` file into `process.env`. Storing configuration in the environment separate from code is based on [The Twelve-Factor App](http://12factor.net/config) methodology.
+
+**Why Webenv?**
 
 While `dotenv` provide a convenient way of loading environment variables from a `.env` file for Node.js, however managing environment variables for the web platform doesn't seem to be any easier.
 
