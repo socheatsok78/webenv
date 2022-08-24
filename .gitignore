@@ -1,3 +1,5 @@
+test/
+
 # Created by https://www.toptal.com/developers/gitignore/api/node,osx
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,osx
 
@@ -148,7 +150,8 @@ dist
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
