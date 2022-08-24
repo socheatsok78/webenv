@@ -1,11 +1,12 @@
 {
   "name": "@socheatsok78/webenv",
+  "description": "Loads variables from .env for web projects.",
   "version": "0.2.0",
   "main": "lib/main.js",
   "types": "lib/main.d.ts",
   "repository": "https://github.com/socheatsok78/webenv",
   "author": "Socheat Sok <socheatsok78@gmail.com>",
-  "license": "MIT",
+  "license": "BSD-2-Clause",
   "exports": {
     ".": {
       "require": "./lib/main.js",
@@ -14,6 +15,16 @@
     },
     "./package.json": "./package.json"
   },
+  "keywords": [
+    "webenv",
+    "dotenv",
+    "env",
+    ".env",
+    "environment",
+    "variables",
+    "config",
+    "settings"
+  ],
   "devDependencies": {
     "dotenv": "^16.0.1",
     "dotenv-expand": "^8.0.3"
