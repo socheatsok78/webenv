@@ -2,7 +2,7 @@
 
 Loads variables from `.env` for web projects.
 
-# Story
+### Story
 
 <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
 
