@@ -1,5 +1,10 @@
 // TypeScript Version: 3.0
 
+// Global
+declare global {
+    var env: DotenvParseOutput
+}
+
 // dotenv
 export interface DotenvParseOutput {
     [name: string]: string;
