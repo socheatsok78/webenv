@@ -1,8 +1,11 @@
 {
   "name": "webenv",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "lib/main.js",
   "repository": "https://github.com/socheatsok78/webenv",
   "author": "Socheat Sok <socheatsok78@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
 }
