@@ -1,0 +1,8 @@
+{
+  "name": "webenv",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/socheatsok78/webenv",
+  "author": "Socheat Sok <socheatsok78@gmail.com>",
+  "license": "MIT"
+}
