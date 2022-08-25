@@ -17,10 +17,9 @@ Dotenv is a zero-dependency module that loads environment variables from a `.env
 
 **Why Webenv?**
 
-While `dotenv` provide a convenient way of loading environment variables from a `.env` file for Node.js, however managing environment variables for the web platform doesn't seem to be any easier.
+While `dotenv` provide a convenient way of loading environment variables from a `.env` file for Node.js, however managing runtime environment variables for the web doesn't seem to be any easier.
 
-This project is aimed to fix the those on the web platform by using `fetch` to request the `.env` file from your publicly accessible path.
-It a highly customized [`dotenv`](https://github.com/motdotla/dotenv) and [`dotenv-expand`](https://github.com/motdotla/dotenv-expand) functionality.
+This project is aimed to fix the those on the web by providing a wrapper to `dotenv` using `fetch` to make a request for `.env` file from your publicly accessible path. It is a highly customized [`dotenv`](https://github.com/motdotla/dotenv) and [`dotenv-expand`](https://github.com/motdotla/dotenv-expand) built for the web.
 
 ## Install
 
@@ -38,8 +37,15 @@ yarn add @socheatsok78/webenv
 
 Create a `.env` file in the public folder of your project:
 ```env
+# Please DO NOT store your sensitive data here
+# This file must be publicly accessible by anyone
 API_BACKEND_ENDPOINT="https://api.example.com"
 ```
+
+> NOTE: 
+> 
+> The `webenv` do not have access to the server environment variables. 
+> You can consider that the `webenv` is only use for runtime configuration only.
 
 As early as possible in your application, import and configure dotenv:
 ```js
