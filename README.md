@@ -4,6 +4,9 @@
 
 Loads variables from `.env` for web projects.
 
+[https://img.shields.io/npm/dw/@socheatsok78/webenv?style=flat-square](https://www.npmjs.com/package/@socheatsok78/webenv)
+[https://img.shields.io/github/license/socheatsok78/webenv?style=flat-square](LICENSE)
+
 ### Story
 
 <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
