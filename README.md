@@ -1,4 +1,4 @@
-# webenv
+# @socheatsok78/webenv
 
 Loads variables from `.env` for web projects.
 
