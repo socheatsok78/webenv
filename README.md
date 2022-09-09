@@ -2,7 +2,7 @@
 
 Loads variables from `.env` for web projects.
 
-[![npm-downloads](https://img.shields.io/npm/dw/@socheatsok78/webenv?style=flat-square)](https://www.npmjs.com/package/@socheatsok78/webenv)
+[![npm-downloads](https://img.shields.io/npm/dm/@socheatsok78/webenv?style=flat-square)](https://www.npmjs.com/package/@socheatsok78/webenv)
 [![license](https://img.shields.io/github/license/socheatsok78/webenv?style=flat-square)](LICENSE)
 
 ### Story
